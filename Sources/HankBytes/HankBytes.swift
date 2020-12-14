@@ -57,3 +57,14 @@ public struct HankByte {
         .metalTube,
     ]
 }
+
+// MARK: - Identifiable Conformance
+
+extension HankByte: Identifiable {
+    
+    public typealias ID = UUID
+    
+    public var id: UUID {
+        UUID()
+    }
+}
